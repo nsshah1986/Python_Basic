@@ -189,7 +189,7 @@ if out_of_guess:
 else:
     print("you win")
 
-"""
+
 # For Loop
 #---------------------------------------------------------
 
@@ -209,3 +209,15 @@ def raise_to_power (basenum,pownum):
         result=result*basenum
     return result
 print(raise_to_power (4,3))
+
+"""
+# except
+#---------------------------------------------------------
+try:
+     val=10/0
+     number=int(input(" enter a number:"))
+     print(number)
+except ZeroDivisionError:
+    print("devided by Zero")
+except ValueError:
+    print("invalid entry")
